@@ -1,5 +1,20 @@
+<style type="text/css">
+    /* 화면에는 숨겨지지만 음성으로는 출력됨 */
+    .blind {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+</style>
+
 <table summary="이 표는 총 3열로 구성되었으며 1열은 선택한 부동산 매물의 면적을, 2열은 면적별 매매가를, 3열은 면적별 전세가를 나타낸다.">
-    <caption>면적별 시세</caption>
+    <!-- 표 제목 화면에서 숨기기 -->
+    <caption class="blind">면적별 시세</caption>
     <!-- col: 세로방향 row: 가로방향 -->
     <thead>
         <tr>
